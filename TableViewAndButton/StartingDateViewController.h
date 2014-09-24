@@ -1,0 +1,14 @@
+//
+//  StartingDateViewController.h
+//  TableViewAndButton
+//
+//  Created by Roden on 9/23/14.
+//  Copyright (c) 2014 Roden. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "SavedProtocol.h"
+
+@interface StartingDateViewController : UIViewController
+@property (nonatomic, assign) id <SavedProtocol> delegate;
+@end
