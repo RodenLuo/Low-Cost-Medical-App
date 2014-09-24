@@ -13,6 +13,32 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSArray *notificationArray = [application scheduledLocalNotifications];
+    if ([notificationArray count] > 0) {
+        for (UILocalNotification * notification in notificationArray){
+            
+            //Output date in NSLog.
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            dateFormatter.timeZone = [NSTimeZone defaultTimeZone];
+            dateFormatter.dateStyle = NSDateFormatterShortStyle;
+            dateFormatter.timeStyle = NSDateFormatterShortStyle;
+            NSString *dateString = [dateFormatter stringFromDate:notification.fireDate];
+            
+            NSDate *endingDate = [[NSUserDefaults standardUserDefaults] objectForKey:@"timer_ending_date"];
+            NSString *endingDateString = [dateFormatter stringFromDate:endingDate];
+            NSLog(@"Ending date is at %@.",endingDateString);
+            NSLog(@"Notification date is at %@", dateString);
+            
+            if ([notification.fireDate compare:endingDate] == NSOrderedDescending) {
+                [application cancelLocalNotification:notification];
+                NSLog(@"The notification at %@ has been cancelled!\n\n",dateString);
+            }else{
+                NSLog(@"We have notification at %@.\n\n",dateString);
+            }
+        }
+    }else{
+        NSLog(@"We do not have any UILocalNotification!");
+    }
     return YES;
 }
 							
