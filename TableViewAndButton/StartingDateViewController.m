@@ -26,6 +26,7 @@
         _timeOfDayPicker = [[UIDatePicker alloc] init];
         [_timeOfDayPicker setDatePickerMode:UIDatePickerModeDate];
     }
+    [_timeOfDayPicker setMinimumDate:[NSDate date]];
     return _timeOfDayPicker;
 }
 
