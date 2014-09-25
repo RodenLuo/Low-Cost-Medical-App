@@ -133,8 +133,6 @@
 {
     [super viewDidLoad];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-//    NSDate *nowDate = [NSDate date];
-//    [self.userDefaults setObject:nowDate forKey:@"timer_time"];
     [self setDefaults];
 }
 
@@ -256,8 +254,8 @@
             [self weekEndNotificationOnWeekday:i+1 :self.weekDayNotification[i] :[self.userDefaults objectForKey:@"timer_time"] : [self.userDefaults objectForKey:@"timer_starting_date"]];
         }
     }
-    [self presentMessage:@"Set alarm!"];
     [self setDefaults];
+    [self presentMessage:@"Set alarm!"];
 }
 
 - (IBAction)cancelTimerTapped:(id)sender {

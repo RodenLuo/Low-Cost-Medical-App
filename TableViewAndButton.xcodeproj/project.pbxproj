@@ -35,6 +35,10 @@
 		0E51FDE419CF2C5F00F7AE15 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E51FDE319CF2C5F00F7AE15 /* MyTableViewController.m */; };
 		0E63918219D2479E00F74A8D /* DaysOfWeekPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E63918119D2479E00F74A8D /* DaysOfWeekPopoverViewController.m */; };
 		0E63918519D25D4A00F74A8D /* StartingDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E63918419D25D4A00F74A8D /* StartingDateViewController.m */; };
+		0EAAD49B19D4547200188548 /* MCSoundBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAAD49A19D4547200188548 /* MCSoundBoard.m */; };
+		0EAAD49F19D4556600188548 /* 0xFFFF.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0EAAD49D19D4556600188548 /* 0xFFFF.wav */; };
+		0EAAD4A019D4556600188548 /* Power.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0EAAD49E19D4556600188548 /* Power.wav */; };
+		0EAAD4A419D45A4600188548 /* newblogtoast.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0EAAD4A319D45A4600188548 /* newblogtoast.wav */; };
 		DF6E52E77EF2437BA07CD393 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4830C4315D1149B99201B5D5 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +100,11 @@
 		0E63918119D2479E00F74A8D /* DaysOfWeekPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaysOfWeekPopoverViewController.m; sourceTree = "<group>"; };
 		0E63918319D25D4A00F74A8D /* StartingDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartingDateViewController.h; sourceTree = "<group>"; };
 		0E63918419D25D4A00F74A8D /* StartingDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingDateViewController.m; sourceTree = "<group>"; };
+		0EAAD49919D4547200188548 /* MCSoundBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSoundBoard.h; sourceTree = "<group>"; };
+		0EAAD49A19D4547200188548 /* MCSoundBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSoundBoard.m; sourceTree = "<group>"; };
+		0EAAD49D19D4556600188548 /* 0xFFFF.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0xFFFF.wav; sourceTree = "<group>"; };
+		0EAAD49E19D4556600188548 /* Power.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Power.wav; sourceTree = "<group>"; };
+		0EAAD4A319D45A4600188548 /* newblogtoast.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = newblogtoast.wav; sourceTree = "<group>"; };
 		0EB2DFFB19D204D5007CAAD0 /* SavedProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SavedProtocol.h; sourceTree = "<group>"; };
 		32FFDC95304840E1BDA21765 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		4830C4315D1149B99201B5D5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -190,8 +199,6 @@
 				0E3F037119D0BCE60046A397 /* TimerTableViewController.h */,
 				0E3F037219D0BCE60046A397 /* TimerTableViewController.m */,
 				0EB2DFFB19D204D5007CAAD0 /* SavedProtocol.h */,
-				0E2A807F19D08446004E52D8 /* MyCell.h */,
-				0E2A808019D08446004E52D8 /* MyCell.m */,
 				0E51FDE219CF2C5F00F7AE15 /* MyTableViewController.h */,
 				0E51FDE319CF2C5F00F7AE15 /* MyTableViewController.m */,
 				0E51FDC519CF2C2700F7AE15 /* Images.xcassets */,
@@ -203,6 +210,9 @@
 		0E51FDB419CF2C2700F7AE15 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0EAAD4A219D4587E00188548 /* UISubclass */,
+				0EAAD4A119D4556B00188548 /* Sound */,
+				0EAAD49C19D4548600188548 /* MCSoundBoard */,
 				0E38A38719D3034500205112 /* WeekDayNotifications */,
 				0E51FDB519CF2C2700F7AE15 /* TableViewAndButton-Info.plist */,
 				0E51FDB619CF2C2700F7AE15 /* InfoPlist.strings */,
@@ -236,6 +246,34 @@
 				0E51FDD519CF2C2700F7AE15 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0EAAD49C19D4548600188548 /* MCSoundBoard */ = {
+			isa = PBXGroup;
+			children = (
+				0EAAD49919D4547200188548 /* MCSoundBoard.h */,
+				0EAAD49A19D4547200188548 /* MCSoundBoard.m */,
+			);
+			name = MCSoundBoard;
+			sourceTree = "<group>";
+		};
+		0EAAD4A119D4556B00188548 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				0EAAD49D19D4556600188548 /* 0xFFFF.wav */,
+				0EAAD4A319D45A4600188548 /* newblogtoast.wav */,
+				0EAAD49E19D4556600188548 /* Power.wav */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		0EAAD4A219D4587E00188548 /* UISubclass */ = {
+			isa = PBXGroup;
+			children = (
+				0E2A807F19D08446004E52D8 /* MyCell.h */,
+				0E2A808019D08446004E52D8 /* MyCell.m */,
+			);
+			name = UISubclass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,8 +355,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E51FDC619CF2C2700F7AE15 /* Images.xcassets in Resources */,
+				0EAAD4A419D45A4600188548 /* newblogtoast.wav in Resources */,
 				0E51FDB819CF2C2700F7AE15 /* InfoPlist.strings in Resources */,
+				0EAAD49F19D4556600188548 /* 0xFFFF.wav in Resources */,
 				0E51FDC119CF2C2700F7AE15 /* Main.storyboard in Resources */,
+				0EAAD4A019D4556600188548 /* Power.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +421,7 @@
 				0E2A808119D08446004E52D8 /* MyCell.m in Sources */,
 				0E37B00319D2E1F700D9666C /* EndingDateViewController.m in Sources */,
 				0E38A37F19D3033A00205112 /* SundayNotification.m in Sources */,
+				0EAAD49B19D4547200188548 /* MCSoundBoard.m in Sources */,
 				0E51FDBE19CF2C2700F7AE15 /* AppDelegate.m in Sources */,
 				0E38A38119D3033A00205112 /* MondayNotification.m in Sources */,
 				0E51FDBA19CF2C2700F7AE15 /* main.m in Sources */,
