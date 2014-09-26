@@ -236,7 +236,7 @@
             </objects>
             <point key="canvasLocation" x="1547" y="-1308"/>
         </scene>
-        <!--Mornitoring-->
+        <!--Monitoring-->
         <scene sceneID="M95-vh-xCT">
             <objects>
                 <viewController id="0uH-jN-HEf" customClass="MonitoringViewController" sceneMemberID="viewController">
@@ -259,7 +259,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Mornitoring" id="HeA-lP-FJZ"/>
+                    <navigationItem key="navigationItem" title="Monitoring" id="HeA-lP-FJZ"/>
                     <connections>
                         <outlet property="myGraph" destination="rXz-Vb-jnK" id="mcb-x6-OdQ"/>
                     </connections>
