@@ -236,7 +236,7 @@
 
     notification.repeatInterval = NSWeekCalendarUnit;
     notification.fireDate=[calendar dateFromComponents:componentsForFireTime];
-    notification.alertBody = @"Alarm Clock Alert";
+    notification.alertBody = @"It is time to take medicine!";
     [[UIApplication sharedApplication] scheduleLocalNotification:notification];
     
     //Output date set in NSLog.
