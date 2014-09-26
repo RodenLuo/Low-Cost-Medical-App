@@ -10,7 +10,6 @@
 //Audio Handling header
 #import "MCSoundBoard.h"
 
-
 @interface MyTableViewController ()
 {
     int timerCount;
@@ -242,7 +241,6 @@
             [self canSave];
         }
     }
-    
 }
 - (IBAction)powerButtonTapped:(id)sender {
     if ([self.powerState isEqualToString:@"POWER_ON"]) {

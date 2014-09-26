@@ -35,6 +35,7 @@
 		0E51FDE419CF2C5F00F7AE15 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E51FDE319CF2C5F00F7AE15 /* MyTableViewController.m */; };
 		0E63918219D2479E00F74A8D /* DaysOfWeekPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E63918119D2479E00F74A8D /* DaysOfWeekPopoverViewController.m */; };
 		0E63918519D25D4A00F74A8D /* StartingDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E63918419D25D4A00F74A8D /* StartingDateViewController.m */; };
+		0E851A6919D5AFB600D379C4 /* MonitoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E851A6819D5AFB600D379C4 /* MonitoringViewController.m */; };
 		0EAAD49B19D4547200188548 /* MCSoundBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAAD49A19D4547200188548 /* MCSoundBoard.m */; };
 		0EAAD49F19D4556600188548 /* 0xFFFF.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0EAAD49D19D4556600188548 /* 0xFFFF.wav */; };
 		0EAAD4A019D4556600188548 /* Power.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0EAAD49E19D4556600188548 /* Power.wav */; };
@@ -100,6 +101,8 @@
 		0E63918119D2479E00F74A8D /* DaysOfWeekPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaysOfWeekPopoverViewController.m; sourceTree = "<group>"; };
 		0E63918319D25D4A00F74A8D /* StartingDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartingDateViewController.h; sourceTree = "<group>"; };
 		0E63918419D25D4A00F74A8D /* StartingDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingDateViewController.m; sourceTree = "<group>"; };
+		0E851A6719D5AFB600D379C4 /* MonitoringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoringViewController.h; sourceTree = "<group>"; };
+		0E851A6819D5AFB600D379C4 /* MonitoringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitoringViewController.m; sourceTree = "<group>"; };
 		0EAAD49919D4547200188548 /* MCSoundBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSoundBoard.h; sourceTree = "<group>"; };
 		0EAAD49A19D4547200188548 /* MCSoundBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSoundBoard.m; sourceTree = "<group>"; };
 		0EAAD49D19D4556600188548 /* 0xFFFF.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0xFFFF.wav; sourceTree = "<group>"; };
@@ -201,6 +204,8 @@
 				0EB2DFFB19D204D5007CAAD0 /* SavedProtocol.h */,
 				0E51FDE219CF2C5F00F7AE15 /* MyTableViewController.h */,
 				0E51FDE319CF2C5F00F7AE15 /* MyTableViewController.m */,
+				0E851A6719D5AFB600D379C4 /* MonitoringViewController.h */,
+				0E851A6819D5AFB600D379C4 /* MonitoringViewController.m */,
 				0E51FDC519CF2C2700F7AE15 /* Images.xcassets */,
 				0E51FDB419CF2C2700F7AE15 /* Supporting Files */,
 			);
@@ -415,6 +420,7 @@
 				0E38A38319D3033A00205112 /* WednesdayNotification.m in Sources */,
 				0E51FDE419CF2C5F00F7AE15 /* MyTableViewController.m in Sources */,
 				0E38A38219D3033A00205112 /* TuesdayNotification.m in Sources */,
+				0E851A6919D5AFB600D379C4 /* MonitoringViewController.m in Sources */,
 				0E38A38419D3033A00205112 /* ThursdayNotification.m in Sources */,
 				0E38A38619D3033A00205112 /* SaturdayNotification.m in Sources */,
 				0E38A38519D3033A00205112 /* FridayNotification.m in Sources */,
