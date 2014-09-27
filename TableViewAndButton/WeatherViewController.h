@@ -1,5 +1,5 @@
 //
-//  MonitoringViewController.h
+//  WeatherViewController.h
 //  TableViewAndButton
 //
 //  Created by Roden on 9/26/14.
@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <BEMSimpleLineGraphView.h>
 
-@interface MonitoringViewController : UIViewController <BEMSimpleLineGraphDelegate, BEMSimpleLineGraphDataSource>
+
+@interface WeatherViewController : UIViewController <UIScrollViewDelegate, BEMSimpleLineGraphDelegate, BEMSimpleLineGraphDataSource>
 
 @end

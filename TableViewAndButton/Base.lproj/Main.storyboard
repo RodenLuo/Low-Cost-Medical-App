@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="xHH-bk-fy4">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -237,36 +236,66 @@
             <point key="canvasLocation" x="1547" y="-1308"/>
         </scene>
         <!--Monitoring-->
-        <scene sceneID="M95-vh-xCT">
+        <scene sceneID="8pt-FW-TFm">
             <objects>
-                <viewController id="0uH-jN-HEf" customClass="MonitoringViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="C27-gd-Bu0"/>
-                        <viewControllerLayoutGuide type="bottom" id="ajA-Jj-t5l"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AAH-Lf-VWk">
+                <tableViewController id="vW6-Vi-hCn" customClass="MonitoringTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="4PF-zs-xnP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rXz-Vb-jnK" customClass="BEMSimpleLineGraphView">
-                                <rect key="frame" x="8" y="72" width="273" height="185"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="0uH-jN-HEf" id="E6f-48-FUg"/>
-                                    <outlet property="delegate" destination="0uH-jN-HEf" id="B5a-6W-xmS"/>
-                                </connections>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Monitoring" id="HeA-lP-FJZ"/>
+                        <sections>
+                            <tableViewSection headerTitle="Drug used:" id="ACW-hC-YZ9">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="182" id="5cT-eG-94Y">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5cT-eG-94Y" id="n4g-Os-wvW">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ld4-Ts-c5Q" customClass="BEMSimpleLineGraphView">
+                                                    <rect key="frame" x="8" y="2" width="305" height="177"/>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="vW6-Vi-hCn" id="8Zd-PM-HH6"/>
+                                                        <outlet property="delegate" destination="vW6-Vi-hCn" id="ZsN-w4-a9x"/>
+                                                    </connections>
+                                                </view>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="Weather info:" id="aZI-1Y-9Y0">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="209" id="jHW-yD-2av">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jHW-yD-2av" id="FYU-N6-xSR">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3vi-Jj-a2K">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+                                                    <connections>
+                                                        <segue destination="j0l-Xe-x28" kind="embed" id="bnA-zo-Duh"/>
+                                                    </connections>
+                                                </containerView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="vW6-Vi-hCn" id="8YZ-ZD-m9W"/>
+                            <outlet property="delegate" destination="vW6-Vi-hCn" id="44U-zH-lfH"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Monitoring" id="1qb-AQ-Ybb"/>
                     <connections>
-                        <outlet property="myGraph" destination="rXz-Vb-jnK" id="mcb-x6-OdQ"/>
+                        <outlet property="myGraph" destination="ld4-Ts-c5Q" id="drh-Yn-ea7"/>
                     </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0xR-mh-dW9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WLY-aG-11N" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1599" y="-444"/>
+            <point key="canvasLocation" x="1547" y="-612"/>
         </scene>
         <!--Timer-->
         <scene sceneID="2ky-UW-kGY">
@@ -526,7 +555,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="wDS-iN-oVm" kind="relationship" relationship="viewControllers" id="a8s-Ui-xhj"/>
-                        <segue destination="vE6-Sp-k5w" kind="relationship" relationship="viewControllers" id="Dso-o9-xe9"/>
+                        <segue destination="X6w-nJ-Iau" kind="relationship" relationship="viewControllers" id="VVq-M1-tVP"/>
                         <segue destination="XNR-oo-t8x" kind="relationship" relationship="viewControllers" id="Frh-YW-MLv"/>
                     </connections>
                 </tabBarController>
@@ -553,24 +582,43 @@
             </objects>
             <point key="canvasLocation" x="1099" y="325"/>
         </scene>
-        <!--Item-->
-        <scene sceneID="V3d-87-H8w">
+        <!--Monitoring-->
+        <scene sceneID="5n5-fz-bRq">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vE6-Sp-k5w" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="Monitoring" id="XFj-Hc-vBt"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X6w-nJ-Iau" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Monitoring" image="Monitoring" id="ZWX-qJ-RHd"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i1U-eU-apf">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zch-kI-zZo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="0uH-jN-HEf" kind="relationship" relationship="rootViewController" id="HW2-0L-BLk"/>
+                        <segue destination="vW6-Vi-hCn" kind="relationship" relationship="rootViewController" id="AwO-Xg-fFc"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B7u-0c-XFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lTc-Zf-YbF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1099" y="-458"/>
+            <point key="canvasLocation" x="1077" y="-631"/>
+        </scene>
+        <!--Weather View Controller-->
+        <scene sceneID="f0g-h2-bev">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="j0l-Xe-x28" customClass="WeatherViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wV5-aK-ES0"/>
+                        <viewControllerLayoutGuide type="bottom" id="H42-4q-pJu"/>
+                    </layoutGuides>
+                    <view key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jH5-iZ-hnE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="209"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gXf-yo-jXR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1956" y="-466.5"/>
         </scene>
     </scenes>
     <resources>

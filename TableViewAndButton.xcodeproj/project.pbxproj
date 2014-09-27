@@ -19,6 +19,7 @@
 		0E38A38519D3033A00205112 /* FridayNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38A37C19D3033A00205112 /* FridayNotification.m */; };
 		0E38A38619D3033A00205112 /* SaturdayNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E38A37E19D3033A00205112 /* SaturdayNotification.m */; };
 		0E3F037319D0BCE60046A397 /* TimerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E3F037219D0BCE60046A397 /* TimerTableViewController.m */; };
+		0E4B53A619D60D43002F24BE /* MonitoringTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4B53A519D60D43002F24BE /* MonitoringTableViewController.m */; };
 		0E51FDAE19CF2C2700F7AE15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E51FDAD19CF2C2700F7AE15 /* Foundation.framework */; };
 		0E51FDB019CF2C2700F7AE15 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E51FDAF19CF2C2700F7AE15 /* CoreGraphics.framework */; };
 		0E51FDB219CF2C2700F7AE15 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E51FDB119CF2C2700F7AE15 /* UIKit.framework */; };
@@ -35,7 +36,8 @@
 		0E51FDE419CF2C5F00F7AE15 /* MyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E51FDE319CF2C5F00F7AE15 /* MyTableViewController.m */; };
 		0E63918219D2479E00F74A8D /* DaysOfWeekPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E63918119D2479E00F74A8D /* DaysOfWeekPopoverViewController.m */; };
 		0E63918519D25D4A00F74A8D /* StartingDateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E63918419D25D4A00F74A8D /* StartingDateViewController.m */; };
-		0E851A6919D5AFB600D379C4 /* MonitoringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E851A6819D5AFB600D379C4 /* MonitoringViewController.m */; };
+		0E94B5F719D656BA0012C496 /* WeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E94B5F619D656BA0012C496 /* WeatherViewController.m */; };
+		0E94B5FA19D65B960012C496 /* PageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E94B5F919D65B960012C496 /* PageControl.m */; };
 		0EAAD49B19D4547200188548 /* MCSoundBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EAAD49A19D4547200188548 /* MCSoundBoard.m */; };
 		0EAAD49F19D4556600188548 /* 0xFFFF.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0EAAD49D19D4556600188548 /* 0xFFFF.wav */; };
 		0EAAD4A019D4556600188548 /* Power.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0EAAD49E19D4556600188548 /* Power.wav */; };
@@ -78,6 +80,8 @@
 		0E38A37E19D3033A00205112 /* SaturdayNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SaturdayNotification.m; sourceTree = "<group>"; };
 		0E3F037119D0BCE60046A397 /* TimerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerTableViewController.h; sourceTree = "<group>"; };
 		0E3F037219D0BCE60046A397 /* TimerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerTableViewController.m; sourceTree = "<group>"; };
+		0E4B53A419D60D43002F24BE /* MonitoringTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoringTableViewController.h; sourceTree = "<group>"; };
+		0E4B53A519D60D43002F24BE /* MonitoringTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitoringTableViewController.m; sourceTree = "<group>"; };
 		0E51FDAA19CF2C2700F7AE15 /* TableViewAndButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewAndButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E51FDAD19CF2C2700F7AE15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0E51FDAF19CF2C2700F7AE15 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,8 +105,10 @@
 		0E63918119D2479E00F74A8D /* DaysOfWeekPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DaysOfWeekPopoverViewController.m; sourceTree = "<group>"; };
 		0E63918319D25D4A00F74A8D /* StartingDateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartingDateViewController.h; sourceTree = "<group>"; };
 		0E63918419D25D4A00F74A8D /* StartingDateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingDateViewController.m; sourceTree = "<group>"; };
-		0E851A6719D5AFB600D379C4 /* MonitoringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoringViewController.h; sourceTree = "<group>"; };
-		0E851A6819D5AFB600D379C4 /* MonitoringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitoringViewController.m; sourceTree = "<group>"; };
+		0E94B5F519D656BA0012C496 /* WeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherViewController.h; sourceTree = "<group>"; };
+		0E94B5F619D656BA0012C496 /* WeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherViewController.m; sourceTree = "<group>"; };
+		0E94B5F819D65B960012C496 /* PageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageControl.h; sourceTree = "<group>"; };
+		0E94B5F919D65B960012C496 /* PageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageControl.m; sourceTree = "<group>"; };
 		0EAAD49919D4547200188548 /* MCSoundBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSoundBoard.h; sourceTree = "<group>"; };
 		0EAAD49A19D4547200188548 /* MCSoundBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSoundBoard.m; sourceTree = "<group>"; };
 		0EAAD49D19D4556600188548 /* 0xFFFF.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = 0xFFFF.wav; sourceTree = "<group>"; };
@@ -204,8 +210,10 @@
 				0EB2DFFB19D204D5007CAAD0 /* SavedProtocol.h */,
 				0E51FDE219CF2C5F00F7AE15 /* MyTableViewController.h */,
 				0E51FDE319CF2C5F00F7AE15 /* MyTableViewController.m */,
-				0E851A6719D5AFB600D379C4 /* MonitoringViewController.h */,
-				0E851A6819D5AFB600D379C4 /* MonitoringViewController.m */,
+				0E4B53A419D60D43002F24BE /* MonitoringTableViewController.h */,
+				0E4B53A519D60D43002F24BE /* MonitoringTableViewController.m */,
+				0E94B5F519D656BA0012C496 /* WeatherViewController.h */,
+				0E94B5F619D656BA0012C496 /* WeatherViewController.m */,
 				0E51FDC519CF2C2700F7AE15 /* Images.xcassets */,
 				0E51FDB419CF2C2700F7AE15 /* Supporting Files */,
 			);
@@ -275,6 +283,8 @@
 		0EAAD4A219D4587E00188548 /* UISubclass */ = {
 			isa = PBXGroup;
 			children = (
+				0E94B5F819D65B960012C496 /* PageControl.h */,
+				0E94B5F919D65B960012C496 /* PageControl.m */,
 				0E2A807F19D08446004E52D8 /* MyCell.h */,
 				0E2A808019D08446004E52D8 /* MyCell.m */,
 			);
@@ -420,9 +430,10 @@
 				0E38A38319D3033A00205112 /* WednesdayNotification.m in Sources */,
 				0E51FDE419CF2C5F00F7AE15 /* MyTableViewController.m in Sources */,
 				0E38A38219D3033A00205112 /* TuesdayNotification.m in Sources */,
-				0E851A6919D5AFB600D379C4 /* MonitoringViewController.m in Sources */,
 				0E38A38419D3033A00205112 /* ThursdayNotification.m in Sources */,
+				0E94B5FA19D65B960012C496 /* PageControl.m in Sources */,
 				0E38A38619D3033A00205112 /* SaturdayNotification.m in Sources */,
+				0E4B53A619D60D43002F24BE /* MonitoringTableViewController.m in Sources */,
 				0E38A38519D3033A00205112 /* FridayNotification.m in Sources */,
 				0E2A808119D08446004E52D8 /* MyCell.m in Sources */,
 				0E37B00319D2E1F700D9666C /* EndingDateViewController.m in Sources */,
@@ -431,6 +442,7 @@
 				0E51FDBE19CF2C2700F7AE15 /* AppDelegate.m in Sources */,
 				0E38A38119D3033A00205112 /* MondayNotification.m in Sources */,
 				0E51FDBA19CF2C2700F7AE15 /* main.m in Sources */,
+				0E94B5F719D656BA0012C496 /* WeatherViewController.m in Sources */,
 				0E38A38019D3033A00205112 /* WeekDayNotificationArray.m in Sources */,
 				0E3F037319D0BCE60046A397 /* TimerTableViewController.m in Sources */,
 				0E35C5B019D0CEF1009E12D1 /* TimeOfDayViewController.m in Sources */,

@@ -1,27 +1,32 @@
 //
-//  MonitoringViewController.m
+//  MonitoringTableViewController.m
 //  TableViewAndButton
 //
 //  Created by Roden on 9/26/14.
 //  Copyright (c) 2014 Roden. All rights reserved.
 //
 
-#import "MonitoringViewController.h"
+#import "MonitoringTableViewController.h"
 
-@interface MonitoringViewController ()
+@interface MonitoringTableViewController ()
 @property (weak, nonatomic) IBOutlet BEMSimpleLineGraphView *myGraph;
 
 @end
 
-@implementation MonitoringViewController
+@implementation MonitoringTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
-    self.myGraph.colorTop = [UIColor colorWithRed:31.0/255.0 green:187.0/255.0 blue:166.0/255.0 alpha:1.0];
-    self.myGraph.colorBottom = [UIColor colorWithRed:31.0/255.0 green:187.0/255.0 blue:166.0/255.0 alpha:1.0];
+    //Setting for the drug use graph
+    self.myGraph.colorTop = [UIColor whiteColor];
+    self.myGraph.colorBottom = [UIColor whiteColor];
     
-    self.myGraph.colorLine = [UIColor whiteColor];
+    //    self.myGraph.colorTop = [UIColor colorWithRed:31.0/255.0 green:187.0/255.0 blue:166.0/255.0 alpha:1.0];
+    //    self.myGraph.colorBottom = [UIColor colorWithRed:31.0/255.0 green:187.0/255.0 blue:166.0/255.0 alpha:1.0];
+    
+    self.myGraph.colorLine = [UIColor blueColor];
     self.myGraph.widthLine = 1.0;
     
     self.myGraph.colorXaxisLabel = [UIColor blackColor];
@@ -59,9 +64,9 @@
 #pragma mark - SimpleLineGraph Delegate
 - (NSString *)lineGraph:(BEMSimpleLineGraphView *)graph labelOnXAxisForIndex:(NSInteger)index {
     if (index < 1) {
-        return [NSString stringWithFormat:@"  %zd",index];
+        return [NSString stringWithFormat:@"  %zd",index+1];
     } else{
-        return [NSString stringWithFormat:@"%zd",index];
+        return [NSString stringWithFormat:@"%zd",index+1];
     }
 }
 
