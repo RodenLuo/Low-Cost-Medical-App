@@ -1,0 +1,13 @@
+PODS:
+  - BEMSimpleLineGraph (3.1)
+  - WYPopoverController (0.2.2)
+
+DEPENDENCIES:
+  - BEMSimpleLineGraph
+  - WYPopoverController (~> 0.2.2)
+
+SPEC CHECKSUMS:
+  BEMSimpleLineGraph: db20cc489912a023d9a082b7c05f15789195f3f6
+  WYPopoverController: c233d69fdfd5c7e316b481df1060624d7a9e629d
+
+COCOAPODS: 0.33.1
